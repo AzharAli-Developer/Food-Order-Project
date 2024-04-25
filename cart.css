@@ -1,0 +1,136 @@
+.cart {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    gap: 20px;
+    justify-content: space-around;
+}
+
+.heading {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+    margin: 40px 0px;
+}
+
+.cart-item {
+    border: 1px solid #ddd;
+    padding: 10px;
+    box-sizing: border-box;
+    flex: 1;
+}
+
+.cart-item p {
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+.cart-item img {
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 3/2;
+    object-fit: contain;
+
+}
+
+.cart-item-details {
+    text-align: center;
+}
+
+.quantity-buttons {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.quantity-buttons div p {
+    display: flex;
+    flex-direction: row;
+}
+
+.quantity-buttons span {
+    margin-top: 5px;
+}
+
+.quantity-buttons button {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    height: 2vw;
+}
+
+.quantity-buttons button:hover {
+    background-color: #45a049;
+}
+
+.quantity-buttons span {
+    padding: 0 10px;
+    font-weight: bold;
+}
+
+.total-section {
+    margin-top: 40px;
+    padding: 10px;
+    border: 2px solid #ddd;
+    width: 30%;
+    margin-left: auto;
+    height: 80vh;
+    text-align: center;
+    position: relative;
+}
+
+#total-price {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+button {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.total-section .checkout {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    text-align: right;
+    margin-bottom: 10px;
+
+}
+
+.total-section h1 {
+    font-family: sans-serif;
+}
+
+.total-section p {
+    font-family: sans-serif;
+}
+
+.total-section div span {
+    font-family: sans-serif;
+    text-align: left;
+    font-weight: bold;
+}
+
+#itemized-list {
+    text-align: left;
+    margin-top: 30px;
+}
+
+.empty-cart-message {
+    font-size: 25px;
+    color: #000;
+}
